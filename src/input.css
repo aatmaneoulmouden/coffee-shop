@@ -12,12 +12,27 @@
     .menu-item:not(:last-child) {
         @apply mb-5 md:mb-0;
     }
+
+    .section-title {
+        @apply text-2xl text-cs-primary font-montserrat font-semibold text-center mb-2 lg:text-start;
+    }
+
+    .section-subtitle {
+        @apply text-cs-black/60 font-light text-center lg:text-start;
+    }
 }
 
 * {
     font-family: 'Roboto', sans-serif;
+    outline: none;
 }
 
 body {
     height: 200vh;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

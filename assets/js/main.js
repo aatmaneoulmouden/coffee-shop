@@ -15,3 +15,24 @@ $(document).ready(function () {
         }
     });
 });
+
+// Offers Swiper
+var swiper = new Swiper(".offersSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".offerswiper-button-next",
+        prevEl: ".offerswiper-button-prev",
+    },
+    pagination: false,
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1270: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+        },
+    },
+});

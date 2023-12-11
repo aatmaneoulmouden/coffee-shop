@@ -147,7 +147,7 @@ function coffeeshop_scripts()
 	wp_style_add_data('coffeeshop-style', 'rtl', 'replace');
 
 	// My custom styles
-	wp_enqueue_style('coffeeshop-fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+	wp_enqueue_style('coffeeshop-swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
 	wp_enqueue_style('coffeeshop-main', get_template_directory_uri() . '/assets/css/style.css');
 
 
@@ -158,8 +158,9 @@ function coffeeshop_scripts()
 	}
 
 	// My custom scripts
-	wp_enqueue_script( 'coffeeshop-jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js', array(), '1.0.0', true );
-	wp_enqueue_script( 'coffeeshop-script', get_template_directory_uri() . '/assets/js/main.js', array('coffeeshop-jquery'), '1.0.0', true );
+	wp_enqueue_script('coffeeshop-swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array(), '1.0.0', true);
+	wp_enqueue_script('coffeeshop-jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js', array(), '1.0.0', true);
+	wp_enqueue_script('coffeeshop-script', get_template_directory_uri() . '/assets/js/main.js', array('coffeeshop-jquery', 'coffeeshop-swiper'), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'coffeeshop_scripts');
 
