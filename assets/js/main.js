@@ -36,3 +36,14 @@ var swiper = new Swiper(".offersSwiper", {
         },
     },
 });
+
+// Gallery Swiper
+var swiper = new Swiper(".gallerySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".galleryswiper-button-next",
+        prevEl: ".galleryswiper-button-prev",
+    },
+    pagination: false,
+});

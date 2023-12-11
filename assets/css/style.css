@@ -617,22 +617,10 @@ video {
   color: rgb(66 40 26 / var(--tw-text-opacity));
 }
 
-@media (min-width: 1024px){
-  .section-title{
-    text-align: start;
-  }
-}
-
 .section-subtitle{
   text-align: center;
   font-weight: 300;
   color: rgb(10 9 8 / 0.6);
-}
-
-@media (min-width: 1024px){
-  .section-subtitle{
-    text-align: start;
-  }
 }
 
 .visible{
@@ -667,13 +655,29 @@ video {
   z-index: 10;
 }
 
+.row-span-1{
+  grid-row: span 1 / span 1;
+}
+
+.row-span-2{
+  grid-row: span 2 / span 2;
+}
+
+.row-span-3{
+  grid-row: span 3 / span 3;
+}
+
+.row-span-4{
+  grid-row: span 4 / span 4;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
 }
 
-.mb-12{
-  margin-bottom: 3rem;
+.mb-6{
+  margin-bottom: 1.5rem;
 }
 
 .block{
@@ -682,6 +686,10 @@ video {
 
 .flex{
   display: flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .hidden{
@@ -694,6 +702,22 @@ video {
 
 .h-screen{
   height: 100vh;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-\[80vh\]{
+  height: 80vh;
+}
+
+.h-\[60vh\]{
+  height: 60vh;
+}
+
+.h-\[75vh\]{
+  height: 75vh;
 }
 
 .w-14{
@@ -710,6 +734,18 @@ video {
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-3{
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-5{
+  grid-template-rows: repeat(5, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -730,6 +766,10 @@ video {
 
 .gap-3{
   gap: 0.75rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
 }
 
 .gap-y-3{
@@ -787,6 +827,11 @@ video {
   background-size: cover;
 }
 
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-2{
   padding: 0.5rem;
 }
@@ -809,11 +854,6 @@ video {
   padding-right: 1.75rem;
 }
 
-.py-24{
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -826,6 +866,10 @@ video {
 
 .pt-20{
   padding-top: 5rem;
+}
+
+.pt-24{
+  padding-top: 6rem;
 }
 
 .text-center{
@@ -904,6 +948,10 @@ video {
   outline: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 200vh;
 }
@@ -972,6 +1020,14 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 @media (min-width: 1024px){
+  .lg\:block{
+    display: block;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -982,5 +1038,9 @@ input[type='number']::-webkit-inner-spin-button {
 
   .lg\:justify-between{
     justify-content: space-between;
+  }
+
+  .lg\:text-start{
+    text-align: start;
   }
 }
