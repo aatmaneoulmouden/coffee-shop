@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // Menu toggler
     $('#menu-toggler').click(function () {
         const menu = $('#menu');
         if (menu.hasClass('hidden')) {

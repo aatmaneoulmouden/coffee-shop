@@ -17,6 +17,14 @@ module.exports = {
         'montserrat': ['"Montserrat"', 'sans-serif'],
         'roboto': ['"Roboto"', 'sans-serif'],
       },
+      colors: {
+        'cs-black': '#0A0908',
+        'cs-primary': '#42281A',
+        'cs-accent': '#E79A2E',
+      },
+      backgroundImage: {
+        'home': "url('../images/home-bg.jpg')",
+      }
     },
   },
   plugins: [],
