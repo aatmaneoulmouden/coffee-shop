@@ -44,19 +44,19 @@
 						</div>
 						<ul id="menu" class="menu-list hidden text-center absolute top-full left-0 right-0 bg-cs-primary py-6 md:relative md:flex md:gap-7 md:py-0 md:bg-transparent">
 							<li class="menu-item">
-								<a href="">Home</a>
+								<a href="#home">Home</a>
 							</li>
 							<li class="menu-item">
-								<a href="">Offers</a>
+								<a href="#offers">Offers</a>
 							</li>
 							<li class="menu-item">
-								<a href="">Gallery</a>
+								<a href="#gallery">Gallery</a>
 							</li>
 							<li class="menu-item">
-								<a href="">Follow us</a>
+								<a href="#follow-us">Follow us</a>
 							</li>
 							<li class="menu-item">
-								<a href="">Blogs</a>
+								<a href="#blogs">Blogs</a>
 							</li>
 						</ul>
 					</nav>
