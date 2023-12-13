@@ -24,6 +24,7 @@ module.exports = {
       },
       backgroundImage: {
         'home': "url('../images/home-bg.jpg')",
+        'followus': "url('../images/follow-us-bg.webp')",
       }
     },
   },

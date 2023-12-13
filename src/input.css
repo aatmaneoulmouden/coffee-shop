@@ -20,6 +20,10 @@
     .section-subtitle {
         @apply text-cs-black/60 font-light text-center;
     }
+
+    .sm-icon {
+        @apply w-8 h-8 bg-cs-accent rounded-full flex items-center justify-center;
+    }
 }
 
 * {

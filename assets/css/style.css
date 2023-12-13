@@ -623,6 +623,17 @@ video {
   color: rgb(10 9 8 / 0.6);
 }
 
+.sm-icon{
+  display: flex;
+  height: 2rem;
+  width: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 154 46 / var(--tw-bg-opacity));
+}
+
 .visible{
   visibility: visible;
 }
@@ -655,10 +666,6 @@ video {
   z-index: 10;
 }
 
-.row-span-1{
-  grid-row: span 1 / span 1;
-}
-
 .row-span-2{
   grid-row: span 2 / span 2;
 }
@@ -667,17 +674,29 @@ video {
   grid-row: span 3 / span 3;
 }
 
-.row-span-4{
-  grid-row: span 4 / span 4;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
 }
 
+.mb-12{
+  margin-bottom: 3rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
+}
+
 .mb-6{
   margin-bottom: 1.5rem;
+}
+
+.mt-24{
+  margin-top: 6rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
 }
 
 .block{
@@ -696,32 +715,32 @@ video {
   display: none;
 }
 
+.h-6{
+  height: 1.5rem;
+}
+
 .h-7{
   height: 1.75rem;
-}
-
-.h-screen{
-  height: 100vh;
-}
-
-.h-full{
-  height: 100%;
-}
-
-.h-\[80vh\]{
-  height: 80vh;
-}
-
-.h-\[60vh\]{
-  height: 60vh;
 }
 
 .h-\[75vh\]{
   height: 75vh;
 }
 
+.h-full{
+  height: 100%;
+}
+
+.h-screen{
+  height: 100vh;
+}
+
 .w-14{
   width: 3.5rem;
+}
+
+.w-6{
+  width: 1.5rem;
 }
 
 .w-64{
@@ -740,10 +759,6 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-rows-3{
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-}
-
 .grid-rows-5{
   grid-template-rows: repeat(5, minmax(0, 1fr));
 }
@@ -754,6 +769,10 @@ video {
 
 .items-center{
   align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
 }
 
 .justify-between{
@@ -770,6 +789,10 @@ video {
 
 .gap-5{
   gap: 1.25rem;
+}
+
+.gap-4{
+  gap: 1rem;
 }
 
 .gap-y-3{
@@ -819,6 +842,10 @@ video {
   background-color: rgb(66 40 26 / var(--tw-bg-opacity));
 }
 
+.bg-followus{
+  background-image: url('../images/follow-us-bg.webp');
+}
+
 .bg-home{
   background-image: url('../images/home-bg.jpg');
 }
@@ -852,6 +879,11 @@ video {
 .px-7{
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+}
+
+.py-24{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .py-3{
@@ -912,12 +944,21 @@ video {
   font-weight: 500;
 }
 
+.font-semibold{
+  font-weight: 600;
+}
+
 .leading-10{
   line-height: 2.5rem;
 }
 
 .leading-7{
   line-height: 1.75rem;
+}
+
+.text-cs-accent{
+  --tw-text-opacity: 1;
+  color: rgb(231 154 46 / var(--tw-text-opacity));
 }
 
 .text-cs-black{

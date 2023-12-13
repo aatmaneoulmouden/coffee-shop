@@ -148,6 +148,7 @@ function coffeeshop_scripts()
 
 	// My custom styles
 	wp_enqueue_style('coffeeshop-swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
+	wp_enqueue_style('coffeeshop-fontawsome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 	wp_enqueue_style('coffeeshop-main', get_template_directory_uri() . '/assets/css/style.css');
 
 
