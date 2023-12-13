@@ -47,3 +47,24 @@ var swiper = new Swiper(".gallerySwiper", {
     },
     pagination: false,
 });
+
+// Blogs Swiper
+var swiper = new Swiper(".blogsSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".blogswiper-button-next",
+        prevEl: ".blogswiper-button-prev",
+    },
+    pagination: false,
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1270: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+        },
+    },
+});
