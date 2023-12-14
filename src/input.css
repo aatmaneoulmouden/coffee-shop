@@ -24,6 +24,18 @@
     .sm-icon {
         @apply w-8 h-8 bg-cs-accent rounded-full flex items-center justify-center;
     }
+
+    .footer-menu-title {
+        @apply font-montserrat font-bold text-cs-accent text-2xl mb-5;
+    }
+
+    .footer-menu-item:not(:last-child) {
+        @apply mb-3;
+    }
+
+    .footer-menu-item a {
+        @apply text-white;
+    }
 }
 
 * {
