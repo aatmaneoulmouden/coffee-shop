@@ -35,23 +35,12 @@
 			</div>
 			<div>
 				<h2 class="footer-menu-title">Useful Links</h2>
-				<ul>
-					<li class="footer-menu-item">
-						<a href="#home">Home</a>
-					</li>
-					<li class="footer-menu-item">
-						<a href="#offers">Offers</a>
-					</li>
-					<li class="footer-menu-item">
-						<a href="#gallery">Gallery</a>
-					</li>
-					<li class="footer-menu-item">
-						<a href="#follow-us">Follow us</a>
-					</li>
-					<li class="footer-menu-item">
-						<a href="#blogs">Blogs</a>
-					</li>
-				</ul>
+
+				<?php wp_nav_menu([
+					'theme_location' => 'useful-links',
+					'container' => false,
+					'add_li_class' => 'footer-menu-item',
+				]); ?>
 			</div>
 			<div>
 				<h2 class="footer-menu-title">Follow us</h2>
