@@ -51,7 +51,8 @@ function coffeeshop_setup()
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__('Primary', 'coffeeshop'),
+			'main-menu' => esc_html__('Main Menu', 'coffeeshop'),
+			'useful-links' => esc_html__('Useful Links Menu', 'coffeeshop'),
 		)
 	);
 
@@ -191,3 +192,21 @@ require get_template_directory() . '/inc/customizer.php';
 if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
+/**
+ * Add additional classes on li elements
+ *
+ * @param [type] $classes
+ * @param [type] $item
+ * @param [type] $args
+ * @return void
+ */
+function add_additional_class_on_li($classes, $item, $args)
+{
+	if (isset($args->add_li_class)) {
+		$classes[] = $args->add_li_class;
+	}
+	return $classes;
+}
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);

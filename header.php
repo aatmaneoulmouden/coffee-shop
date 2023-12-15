@@ -42,23 +42,13 @@
 								<path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
 							</svg>
 						</div>
-						<ul id="menu" class="menu-list hidden text-center absolute top-full left-0 right-0 bg-cs-primary py-6 md:relative md:flex md:gap-7 md:py-0 md:bg-transparent">
-							<li class="menu-item">
-								<a href="#home">Home</a>
-							</li>
-							<li class="menu-item">
-								<a href="#offers">Offers</a>
-							</li>
-							<li class="menu-item">
-								<a href="#gallery">Gallery</a>
-							</li>
-							<li class="menu-item">
-								<a href="#follow-us">Follow us</a>
-							</li>
-							<li class="menu-item">
-								<a href="#blogs">Blogs</a>
-							</li>
-						</ul>
+						<?php wp_nav_menu([
+							'theme_location' => 'main-menu',
+							'container' => false,
+							'menu_class' => 'menu-list hidden text-center absolute top-full left-0 right-0 bg-cs-primary py-6 md:relative md:flex md:gap-7 md:py-0 md:bg-transparent',
+							'menu_id' => 'menu',
+							'add_li_class' => 'menu-item',
+						]); ?>
 					</nav>
 				</div>
 			</div>
