@@ -750,6 +750,10 @@ video {
   height: 1.75rem;
 }
 
+.h-72{
+  height: 18rem;
+}
+
 .h-\[75vh\]{
   height: 75vh;
 }
@@ -760,18 +764,6 @@ video {
 
 .h-screen{
   height: 100vh;
-}
-
-.h-60{
-  height: 15rem;
-}
-
-.h-64{
-  height: 16rem;
-}
-
-.h-72{
-  height: 18rem;
 }
 
 .w-14{

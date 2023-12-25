@@ -210,3 +210,90 @@ function add_additional_class_on_li($classes, $item, $args)
 	return $classes;
 }
 add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+
+
+
+/**
+ * Gallery Section Customizer Settings
+ *
+ * @param [type] $wp_customize
+ * @return void
+ */
+function gallery_section_customizer($wp_customize)
+{
+	// Add a section
+	$wp_customize->add_section('gallery_section_settings', array(
+		'title' => __('Gallery Section Settings', 'coffeeshop'),
+		'priority' => 200,
+	));
+
+	// Add a setting - IMAGE 1
+	$wp_customize->add_setting('gallery_image_1', array(
+		'default' => '',
+		'sanitize_callback' => 'esc_url_raw',
+	));
+
+	// Add a control - IMAGE 1
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'gallery_image_1', array(
+		'label' => __('Image 1', 'coffeeshop'),
+		'section' => 'gallery_section_settings',
+	)));
+	
+	// Add a setting - IMAGE 2
+	$wp_customize->add_setting('gallery_image_2', array(
+		'default' => '',
+		'sanitize_callback' => 'esc_url_raw',
+	));
+
+	// Add a control - IMAGE 2
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'gallery_image_2', array(
+		'label' => __('Image 2', 'coffeeshop'),
+		'section' => 'gallery_section_settings',
+	)));
+	// Add a setting - IMAGE 3
+	$wp_customize->add_setting('gallery_image_3', array(
+		'default' => '',
+		'sanitize_callback' => 'esc_url_raw',
+	));
+
+	// Add a control - IMAGE 3
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'gallery_image_3', array(
+		'label' => __('Image 3', 'coffeeshop'),
+		'section' => 'gallery_section_settings',
+	)));
+	// Add a setting - IMAGE 4
+	$wp_customize->add_setting('gallery_image_4', array(
+		'default' => '',
+		'sanitize_callback' => 'esc_url_raw',
+	));
+
+	// Add a control - IMAGE 4
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'gallery_image_4', array(
+		'label' => __('Image 4', 'coffeeshop'),
+		'section' => 'gallery_section_settings',
+	)));
+	// Add a setting - IMAGE 5
+	$wp_customize->add_setting('gallery_image_5', array(
+		'default' => '',
+		'sanitize_callback' => 'esc_url_raw',
+	));
+
+	// Add a control - IMAGE 5
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'gallery_image_5', array(
+		'label' => __('Image 5', 'coffeeshop'),
+		'section' => 'gallery_section_settings',
+	)));
+	// Add a setting - IMAGE 6
+	$wp_customize->add_setting('gallery_image_6', array(
+		'default' => '',
+		'sanitize_callback' => 'esc_url_raw',
+	));
+
+	// Add a control - IMAGE 6
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'gallery_image_6', array(
+		'label' => __('Image 6', 'coffeeshop'),
+		'section' => 'gallery_section_settings',
+	)));
+
+}
+add_action('customize_register', 'gallery_section_customizer');
