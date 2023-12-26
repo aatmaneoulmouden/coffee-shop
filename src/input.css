@@ -36,6 +36,10 @@
     .footer-menu-item a {
         @apply text-white;
     }
+
+    .blog-content p {
+        @apply text-justify text-cs-black/80 mb-8 text-lg leading-8;
+    }
 }
 
 * {

@@ -657,6 +657,14 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.blog-content p{
+  margin-bottom: 2rem;
+  text-align: justify;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: rgb(10 9 8 / 0.8);
+}
+
 .visible{
   visibility: visible;
 }
@@ -718,8 +726,16 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mt-20{
+  margin-top: 5rem;
+}
+
 .mt-24{
   margin-top: 6rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
 }
 
 .block{
@@ -752,6 +768,10 @@ video {
 
 .h-72{
   height: 18rem;
+}
+
+.h-\[50vh\]{
+  height: 50vh;
 }
 
 .h-\[75vh\]{
@@ -1151,6 +1171,10 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 @media (min-width: 1024px){
+  .lg\:mt-8{
+    margin-top: 2rem;
+  }
+
   .lg\:block{
     display: block;
   }
