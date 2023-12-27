@@ -4,7 +4,7 @@ get_header();
 
 // Get post data
 $title = get_the_title();
-$featured_image_url = has_post_thumbnail() ? get_the_post_thumbnail_url($blog_id, 'full') : get_template_directory_uri() . '/assets/images/gallery-1.jpg';
+$featured_image_url = get_the_post_thumbnail_url(get_the_ID(), 'full') ?: get_template_directory_uri() . '/assets/images/gallery-1.jpg';
 $content = get_the_content();
 
 ?>
